@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet" type='text/css'>
+   <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="weather.js"></script>
+
+<style>
+* {
+  text-align:center;
+ list-style-type: none;
+}
+
+.name h1{
+  font-family:Lobster;
+  margin-top:5%;
+  margin-bottom:3%;
+  color:#47403A  ;
+  font-size:70px;
+}
+
+body{
+  background-repeat:none;
+  background-size:cover;
+}
+
+
+
+.temp, .weather {
+
+  font-size: 30px;
+  color: black;
+}
+
+.sec {
+  margin-bottom:10px;
+}
+
+.info {
+  font-family:Sansita;
+  padding:40px 20px;
+  margin:20px auto;
+  width:40%;
+  border: 1px black solid;
+  border-radius:10px;
+  background-color:white;
+  opacity:0.8;
+}
+
+.city {
+
+  font-size: 50px;
+  margin-top:5px;
+  margin-bottom:30px;
+}
+
+#icon {
+  margin-right:15px;
+}
+
+/* .fa-cloud {
+  color:#4D8DE9;
+}
+
+.fa-sun {
+  color:#EC9210;
+}
+
+.fa-snowflake-o {
+  color:#89D7F2;
+}
+
+.fa-tint {
+  color:#1535E7; }*/
+
+
+.but {
+  margin-bottom:0;
+}
+
+.btn-group {
+  margin-left:15px;
+}
+
+.det {
+  padding:7px;
+}
+
+#feelslike{
+  border-right:1px solid  #1a000d;
+}
+
+#visibility{
+  border-right:1px solid  #1a000d;
+}
+@media (max-width:768px){
+  .name h1 {
+    margin:10% 0;
+    font-size:50px;
+  }
+
+  .info {
+    width:100%;
+     margin:0px auto;
+  }
+
+  .city {
+
+  font-size: 28px;
+  margin-top:5px;
+  margin-bottom:30px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+  <div class="name">
+  <h1 id="appname">Weather App</h1>
+  </div>
+
+  <div class="info">
+    <div class="city"><span id="city"></span></div>
+  <div class="sec">
+    <div class="weather"><span id="weather"></span></div>
+    <div class="temp"><span id="icon"></span><span id="temp"></span>
+   <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active but" id="option1">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> &#176;C
+    </label>
+    <label class="btn btn-primary but" id="option2">
+      <input type="radio" name="options" id="option2" autocomplete="off"> &#176;F
+    </label>
+   </div>
+  </div>
+    </div>
+    <div class="small-info">
+      <span>
+      <span id="feelslike" class="det"></span>
+      <span id="visibility"class="det"></span>
+      <span id="humidity" class="det"></span>
+      </span>
+      </div>
+  <!--    <div class="visibility small-info"></div>
+     <div class="humidity small-info"></div> -->
+
+
+  </div>
+
+</body>
+</html>
